@@ -5,214 +5,239 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignupActivity"
-    android:padding="22dp"
     android:orientation="vertical"
     android:background="@color/colorWhite"
     >
 
-<android.support.design.widget.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    android:layout_marginTop="25dp"
-    >
-
-    <EditText
-        android:id="@+id/et_name"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:hint="FullName"
-        android:ems="10"
-        android:inputType="text"
-        android:textSize="20dp"
-        android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:paddingLeft="10dp"
-        android:drawablePadding="10dp"
+        android:layout_height="wrap_content">
 
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/signup_toolbar"
+            app:title="SignUp Form"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+    </android.support.design.widget.AppBarLayout>
 
-        />
-
-</android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        >
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <EditText
-            android:id="@+id/et_contact"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone No"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:layout_marginTop="3dp"
-            android:drawableLeft="@drawable/ic_phone_in_talk_black_24dp"
-            android:paddingLeft="10dp"
-            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
 
-            />
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="FullName"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="19dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
 
-    </android.support.design.widget.TextInputLayout>
 
+                />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        >
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/et_address"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:layout_marginTop="3dp"
-            android:drawableLeft="@drawable/ic_location_on_black_24dp"
-            android:paddingLeft="10dp"
-            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
 
-            />
+            <EditText
+                android:id="@+id/et_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:ems="10"
+                android:inputType="phone"
+                android:textSize="19dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_phone_in_talk_black_24dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
 
-    </android.support.design.widget.TextInputLayout>
+                />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        >
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/et_email"
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:layout_marginTop="3dp"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
-            android:paddingLeft="10dp"
-            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
 
-            />
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="19dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
 
-    </android.support.design.widget.TextInputLayout>
+                />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-       >
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/et_password"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:layout_marginTop="3dp"
-            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
-            android:paddingLeft="10dp"
-            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
 
-            />
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="19dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
 
-    </android.support.design.widget.TextInputLayout>
+                />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-       >
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/et_cpassword"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:layout_marginTop="3dp"
-            android:drawableLeft="@drawable/ic_lock_black_24dp"
-            android:paddingLeft="10dp"
-            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:passwordToggleEnabled="true"
+            >
 
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="19dp"
+                android:layout_marginTop="3dp"
+                android:drawableStart="@drawable/ic_lock_open_black_24dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:passwordToggleEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/et_cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="19dp"
+                android:layout_marginTop="3dp"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textSize="20dp"
+                android:layout_marginLeft="2dp"
+                />
+            <RadioButton
+                android:id="@+id/rb_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Seller"
+                android:textSize="19dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_buyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Buyer"
+                android:textSize="19dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Register"
+            android:layout_marginTop="35dp"
+            android:textSize="22dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_rounded"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/colorWhite"
             />
-
-    </android.support.design.widget.TextInputLayout>
-
-    <RadioGroup
-        android:id="@+id/rg_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp">
-        
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Type"
-            android:textSize="20dp"
-            android:layout_marginLeft="2dp"
-            />
-        <RadioButton
-            android:id="@+id/rb_seller"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Seller"
-            android:textSize="20dp"
-            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text=" Already a member? Login"
+            android:textColor="@color/colorAccent"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:padding="3dp"
             />
 
-        <RadioButton
-            android:id="@+id/rb_buyer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Buyer"
-            android:textSize="20dp"
-            android:layout_marginLeft="10dp"
-            />
-        
-    </RadioGroup>
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Register"
-    android:layout_marginTop="35dp"
-    android:textSize="24dp"
-    android:textColor="@color/colorWhite"
-    android:background="@drawable/button_rounded"
-    android:padding="10dp"
-    android:textStyle="bold"
-    android:textColorHint="@color/colorWhite"
-    />
-    <TextView
-        android:id="@+id/tv_login"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text=" Already a member? Login"
-        android:textColor="@color/colorAccent"
-        android:textStyle="normal"
-        android:textSize="18dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:padding="3dp"
-        />
+    </LinearLayout>
+
+
 
 </LinearLayout>
